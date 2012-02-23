@@ -1,10 +1,8 @@
 #!/bin/sh
-# Change etemplin to whoever you want to annoy.
-# Also, change tty7 to whatever their terminal is.
-# echo -e '\a' | write etemplin tty6
+# Ring the bell if the user is logged in to tty7
 
-# prints out "usernames computer"
-# who | grep tty7 | awk '{print $1}' | xargs -I {} echo {}s computer
+# echo -e '\a' | write etemplin tty7
+
 
 NAME=`who | grep tty7 | awk '{print $1}' | xargs echo -n`
 TTY=tty7
