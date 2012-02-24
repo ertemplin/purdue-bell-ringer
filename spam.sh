@@ -1,6 +1,6 @@
 #!/bin/sh
 # 
-# Loops through every linux computer in Lawson
+# Loops through every linux computer in Lawson 
 #
 # For more fun, try: for i in {1..10}; do ./spam.sh; done;
 
