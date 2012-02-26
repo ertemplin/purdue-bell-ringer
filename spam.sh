@@ -4,10 +4,10 @@
 #
 # For more fun, try: for i in {1..10}; do ./spam.sh; done;
 
-
+NAME=`whoami`
 
 function doRing {
-	echo '/homes/etemplin/testing/bell/ring.sh' | ssh -o StrictHostKeyChecking=no etemplin@$1.cs.purdue.edu 2>&1 >/dev/null
+	echo '/homes/etemplin/testing/bell/ring.sh' | ssh -o StrictHostKeyChecking=no $NAME@$1.cs.purdue.edu 2>&1 >/dev/null
 }
 
 ME=$$
