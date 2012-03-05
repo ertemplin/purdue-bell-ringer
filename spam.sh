@@ -7,6 +7,7 @@
 NAME=`whoami`
 
 function doRing {
+	# TODO Change this line here to match the path of the ring.sh script before running
 	echo '/homes/etemplin/testing/bell/ring.sh' | ssh -o StrictHostKeyChecking=no $NAME@$1.cs.purdue.edu 2>&1 >/dev/null
 }
 
