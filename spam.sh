@@ -14,11 +14,11 @@ function doRing {
 
 ME=$$
 
-# for host in moore sslab; do
-# 	for id in {00..24}; do
-# 		doRing ${host}${id} &
-# 	done
-# done
+for host in moore sslab; do
+	for id in {00..24}; do
+		doRing ${host}${id} &
+	done
+done
 
 for i in {1..5}; do
 	for j in {1..5}; do
@@ -26,9 +26,9 @@ for i in {1..5}; do
 	done
 done
 
-# for id in {01..13}; do
-# 	doRing sac${id} &
-# done
+for id in {01..13}; do
+	doRing sac${id} &
+done
 
 sleep 2
 kill -9 $ME
