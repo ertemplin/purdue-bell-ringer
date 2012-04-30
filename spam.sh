@@ -5,11 +5,9 @@
 # For more fun, try: for i in {1..10}; do ./spam.sh; done;
 
 NAME=`whoami`
-RINGER_PATH=$PWD"/ring.sh\n"
 
 function doRing {
-	# TODO Change this line here to match the path of the ring.sh script before running
-	$RINGER_PATH | ssh -o StrictHostKeyChecking=no $NAME@$1.cs.purdue.edu 2>&1 >/dev/null
+	echo "/homes/etemplin/testing/bell/clean.sh" | ssh -o StrictHostKeyChecking=no $NAME@$1.cs.purdue.edu 2>&1 >/dev/null
 }
 
 ME=$$
