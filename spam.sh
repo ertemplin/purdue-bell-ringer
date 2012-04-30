@@ -30,5 +30,13 @@ for id in {01..13}; do
 	doRing sac${id} &
 done
 
+for id in {01..18}; do
+	doRing mc${id} &
+done
+
+for id in {00..23}; do
+	doRing escher${id} &
+done
+
 sleep 2
 kill -9 $ME
