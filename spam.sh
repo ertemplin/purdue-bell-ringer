@@ -12,7 +12,7 @@ function doRing {
 
 ME=$$
 
-for host in moore sslab; do
+for host in moore sslab borg; do
 	for id in {00..24}; do
 		doRing ${host}${id} &
 	done
